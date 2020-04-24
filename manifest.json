@@ -1,0 +1,31 @@
+{
+    "manifest_version": 2,
+    "name": "Amazon prime 2.0",
+    "version": "0.1",
+    "description": "Amazon prime",
+    "author": "Felipe Passos",
+    "browser_action": {
+        "default_title": "Amazon prime"
+    },
+    "background": {
+        "scripts": [
+            "index.js"
+        ]
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.primevideo.com/detail/0FSDQFZPU85S513MSLSSFCR4I6/ref=atv_hm_hom_c_8pZiqd_2_2"
+            ],
+            "css": [
+                "style.css"
+            ],
+            "js": [
+                "index.js"
+            ],
+            "html": [
+                "index.html"
+            ]
+        }
+    ]
+}
